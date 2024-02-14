@@ -6,7 +6,7 @@ import ErrorMessage from "../pages/NothingFound/ErrorMessage";
 import Buttons from "./Buttons";
 import JobCard from "./JobCard";
 import FavoriteManager from "../Utls/FavoriteManager";
-import JobDetailsModal from "./jobDetailsModal";
+import JobDetailsModal from "./JobDetailsModal";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useLocation, useNavigate } from "react-router-dom";
 import auth from "../firebase/firebase.init";
