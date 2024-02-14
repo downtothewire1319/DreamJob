@@ -1,6 +1,6 @@
-# HALAL JIBIKA
+# DreamJob
 
-## [Live Link](https://halal-jibika.netlify.app/)
+## [Live Link](https://dream-job-nine.vercel.app/)
 
 Welcome to HALAL JIBIKA! This is a web application where users can find jobs, add them to favorites, and apply for them. Admins have access to a dashboard where they can manage job listings by adding, deleting, or editing them. Users are required to log in to access features such as adding favorites or applying for jobs.
 
@@ -35,5 +35,5 @@ Welcome to HALAL JIBIKA! This is a web application where users can find jobs, ad
 6. Admins can access the dashboard by navigating to `/admin`.
 7. In the dashboard, admins can add, delete, or edit job listings.
 
-# DreamJob
-# DreamJob
+
+
