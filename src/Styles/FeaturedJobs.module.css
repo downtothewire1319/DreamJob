@@ -1,0 +1,60 @@
+.featuredHeading {
+  position: relative;
+  text-align: right;
+  &::before {
+    content: "";
+    background-color: var(--color-secondary);
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -1;
+  }
+  h1 {
+    display: inline-block;
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    border: 2px solid var(--color-secondary);
+    font-weight: 800;
+    font-size: 2.5rem;
+    padding-inline: 1rem;
+    border-radius: 2rem;
+  }
+}
+.featuredJobs {
+  margin-top: 3.5rem;
+  display: grid;
+  padding-inline: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.showAllBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  div {
+    font-size: larger;
+    border-radius: 0.5rem;
+  }
+}
+
+.applicationModal {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+@media (max-width: 929px) {
+  .featuredJobs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

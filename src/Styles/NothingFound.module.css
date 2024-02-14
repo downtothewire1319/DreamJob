@@ -1,0 +1,25 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: #f00;
+  }
+  .homeBtn {
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+
+    display: flex;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,81 @@
+.jobApplicationForm {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 16px;
+}
+.jobApplicationForm .heading {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.jobApplicationForm .closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  button {
+    color: red;
+    font-weight: 900;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+.jobApplicationForm form {
+  display: flex;
+  flex-direction: column;
+}
+.jobApplicationForm .formDivider {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    width: 48%;
+  }
+}
+
+.jobApplicationForm input,
+.jobApplicationForm textarea {
+  width: 100%;
+  margin-top: 5px;
+  font-size: 18px;
+  padding: 4px 8px;
+}
+.jobApplicationForm input {
+  padding: 8px 8px;
+  margin-top: 10px;
+}
+.jobApplicationForm label {
+  display: block;
+  margin-bottom: 24px;
+  p {
+    color: red;
+  }
+}
+
+.jobApplicationForm textarea {
+  resize: none;
+  height: 88px;
+  font-size: 20px;
+}
+.jobApplicationForm .submitBtn {
+  text-align: center;
+  button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 8px 16px;
+    font-size: 20px;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .jobApplicationForm .formDivider {
+    display: block;
+    div {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 5rem;
+}
+
+.hero .heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 45%;
+  h1 {
+    font-size: 6rem;
+    & span {
+      font-family: "Passion One";
+      color: var(--color-primary);
+      span {
+        font-size: 7rem;
+        background-clip: text;
+        background: linear-gradient(
+          0deg,
+          rgba(11, 56, 95, 1) 40%,
+          rgb(135, 0, 254) 30%
+        );
+        -webkit-background-clip: text;
+        color: transparent;
+        display: inline-block;
+      }
+    }
+  }
+  p {
+    font-size: 2rem;
+    line-height: 3rem;
+    & span {
+      font-size: 3rem;
+      font-family: "Passion One";
+      color: var(--color-primary);
+    }
+  }
+}
+
+.heroLeft .heroBtn {
+  align-self: end;
+  div {
+    width: 15.4rem;
+  }
+}
+
+.hero .heroRight {
+  max-width: 45%;
+}
+
+@media (max-width: 991.98px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding-block-end: 5rem;
+  }
+
+  .hero .heroLeft {
+    max-width: 95%;
+    gap: 1.5rem;
+  }
+  .hero .heroRight {
+    max-width: 95%;
+    margin-top: -5rem;
+  }
+}

@@ -1,0 +1,16 @@
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  input {
+    font-size: 1.5rem;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: 2px solid gray;
+  }
+  label {
+    font-weight: bold;
+  }
+}

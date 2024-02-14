@@ -1,0 +1,160 @@
+.container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 40rem;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 3rem 0.8rem gray;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+}
+
+.loginForm input {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  outline: 2px solid gray;
+  margin-bottom: 0.8rem;
+  margin-top: 1.5rem;
+  border: none;
+  width: 100%;
+}
+
+.loginForm input[type="submit"] {
+  outline: none;
+  background-color: var(--color-primary);
+  color: var(--color-accent);
+  border: 2px solid transparent;
+  font-weight: 600;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--color-primary);
+    color: var(--color-primary);
+    background-color: var(--color-accent);
+    border: 2px solid var(--color-primary);
+  }
+}
+
+.wrapper fieldset {
+  border-radius: 0.8rem;
+  border: 2px solid #0b385f;
+}
+
+.wrapper legend {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.5rem;
+  padding-inline: 1rem;
+  border-left: 2px solid var(--color-primary);
+  border-right: 2px solid var(--color-primary);
+  border-radius: 1rem;
+  color: var(--color-primary);
+}
+
+.loginForm .error {
+  outline: 2px solid red;
+  &.span {
+    outline: none;
+    color: red;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+}
+
+.loginForm .signUpText {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  a {
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+}
+
+.socialBtns {
+  position: relative;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  padding-top: 0;
+}
+.socialBtns::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+  top: -1.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.socialBtns::after {
+  position: absolute;
+  content: "or";
+  top: -3rem;
+  left: 50%;
+  background-color: #fff;
+  padding: 0 0.5rem;
+  font-size: 2rem;
+  transform: translateX(-50%);
+}
+
+.socialBtns .googleBtn,
+.socialBtns .githubBtn {
+  border: 2px solid var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  button {
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    background: transparent;
+  }
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--color-primary);
+  }
+}
+
+.socialBtns .githubBtn {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 991.98px) {
+  .wrapper {
+    width: 80%;
+  }
+
+  .socialBtns .googleBtn,
+  .socialBtns .githubBtn {
+    padding: 1rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .wrapper {
+    width: 90%;
+    padding: 1rem;
+  }
+  fieldset {
+    width: 100%;
+  }
+}

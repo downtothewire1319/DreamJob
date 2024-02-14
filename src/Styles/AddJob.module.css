@@ -1,0 +1,30 @@
+.container {
+  margin-top: 2rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding-inline: 0.5rem;
+
+  fieldset {
+    width: 400px;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    fieldset {
+      width: 700px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    fieldset {
+      width: 400px;
+    }
+  }
+}

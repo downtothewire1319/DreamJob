@@ -1,0 +1,131 @@
+.jobDetailModal {
+  z-index: 99;
+  background-color: rgba(11, 56, 95, 0.5);
+  backdrop-filter: blur(0.7rem);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 2rem;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.jobDetailModal > div {
+  background-color: var(--color-white);
+  min-width: 40rem;
+  padding: 2rem;
+  padding-top: 3rem;
+  border-radius: 0.5rem;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.jobDetailModal .closeModalBtn {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: orangered;
+  background-color: transparent;
+  transition: transform 0.2s linear;
+  width: 30px;
+  height: 30px;
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+
+.detailsWrapper {
+  padding: 1rem;
+  max-width: 55rem;
+}
+.detailsTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 3rem;
+}
+.detailsTop .detailsPhoto {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  img {
+    width: 70%;
+  }
+}
+
+.detailsTop .companyInfo {
+  word-break: break-all;
+  padding-left: 4rem;
+  width: 60%;
+  font-size: 1.8rem;
+  h3 {
+    font-size: 3rem;
+  }
+  h5 {
+    margin-block: 0.5rem;
+  }
+}
+
+.detailsBottom .jobInfo {
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    margin-block: 1rem;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+
+    span {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .jobDetailModal > div {
+    min-width: 30rem;
+  }
+  .detailsTop {
+    display: block;
+  }
+  .jobDetailModal .closeModalBtn {
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+@media (max-width: 929px) {
+  .jobDetailModal > div {
+    width: 75vw;
+  }
+  .detailsTop {
+    display: block;
+  }
+  .detailsBottom .jobInfo {
+    .heading {
+      display: block;
+    }
+  }
+  .detailsTop .detailsPhoto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    img {
+      width: 40%;
+    }
+  }
+}

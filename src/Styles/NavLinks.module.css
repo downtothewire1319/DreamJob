@@ -1,0 +1,18 @@
+.links {
+  color: var(--color-white);
+  padding: 0.5rem 0.8rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: background-color 0.5s;
+  &:hover {
+    border-bottom: 2px solid var(--color-accent);
+  }
+}
+
+.active {
+  color: var(--color-black);
+  background-color: var(--color-accent);
+  &:hover {
+    border-bottom: none;
+  }
+}

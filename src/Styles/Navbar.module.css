@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+.container {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.container.scrolled {
+  box-shadow: 0 2px 5px #000;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .logo {
+  font-family: "Black Ops One";
+  font-size: 4rem;
+}
+
+.navLinks ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.burgerMenu {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .burgerMenu {
+    display: block;
+    margin-right: 1rem;
+    font-size: 3rem;
+  }
+  .wrapper {
+    position: relative;
+  }
+  .wrapper .logo {
+    font-size: 3rem;
+    margin-left: 1rem;
+  }
+  .navLinks {
+    position: absolute;
+    top: -45rem;
+    right: 0;
+    background-color: var(--color-primary);
+    padding-inline-end: 1.5rem;
+    padding-inline-start: 2.5rem;
+    height: 40rem;
+    border-bottom-left-radius: 10rem;
+    transition: all 0.1s;
+  }
+  .openMobileNavLinks {
+    top: 3.7rem;
+  }
+  .navLinks ul {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 2rem;
+    padding-block: 1rem;
+  }
+  .userImg {
+    margin-left: 1.5rem;
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .userImg {
+    margin-left: 1rem;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
